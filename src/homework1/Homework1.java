@@ -4,8 +4,10 @@ import java.util.Random;
 
 public class Homework1 {
     public static void main(String[] args) {
+        int max = 20;
+        int min = -20;
         Random random = new Random();
-        int random_number = random.nextInt(20) - 20;
-        System.out.println(random_number);
+        String randomStr = String.valueOf(random.nextInt(max - min + 1) + min);
+        System.out.println(randomStr);
     }
 }
